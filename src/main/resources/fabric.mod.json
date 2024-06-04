@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "non-violent-craft",
+	"version": "${version}",
+	"name": "Non-Violent Craft",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/non-violent-craft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.tiarnach.nvc.NonViolentCraft"
+		],
+		"client": [
+			"net.tiarnach.nvc.NonViolentCraftClient"
+		],
+		"server": [
+			"net.tiarnach.nvc.NonViolentCraftServer"
+		],
+		"fabric-datagen": [
+			"net.tiarnach.nvc.NonViolentCraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"non-violent-craft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
